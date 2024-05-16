@@ -17,3 +17,6 @@ btn.addEventListener("click", () => {
         }, speed);
     }
 });
+inputSpeed.addEventListener("change", (e) => {
+    speed = e.target.value * 1000;
+});

@@ -8,8 +8,6 @@ let idx: number = 0;
 let speed: number = 1000 ;
 
 
-
-
 btn.addEventListener("click", () => {
     if (inputText.value !== "") {
         text = inputText.value;
@@ -20,3 +18,7 @@ btn.addEventListener("click", () => {
         },speed)
     }
 });
+
+inputSpeed.addEventListener("change", (e) => {
+    speed = e.target!.value * 1000;
+})
